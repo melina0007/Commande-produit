@@ -1,0 +1,176 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.main-container{
+    background: #fff;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.img-container{
+    width: 100%;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.625rem;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 1.063rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%);
+}
+
+.description-container .description{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 1.063rem;
+}
+
+.price-container{
+    background: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 1.25rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+}
+
+.annual-plan{
+    margin-right: 6.25rem;
+    line-height: 1.7;
+}
+
+h4{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+}
+
+a{
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.btn-submit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-payment, .btn-cancel{
+    padding: 0.938rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.btn-payment{
+    margin-top: 1.875rem;
+    color: #fff;
+    font-weight: 700;
+    background: hsl(245, 75%, 52%);
+    box-shadow:  2px 10px 30px hsl(225, 36%, 83%);
+    transition: 0.3s ease;
+}
+
+.btn-payment:hover{
+    background-color: hsl(245, 55%, 61%);
+}
+
+.btn-cancel{
+    color: hsl(224, 23%, 55%);
+    background: #fff;
+    margin-top: 0.938rem;
+    font-weight: 900;
+    margin-top: 1.875rem;
+}
+
+.btn-cancel:hover{
+    color:  hsl(223, 47%, 23%);
+
+}
+
+.attribution { 
+    font-size: 0.688rem; 
+    text-align: center; 
+
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 450px) {
+    
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    
+    .main-container{
+        width: 375px;
+    }
+
+    .description-container{
+        padding: 2.188rem;
+    }
+
+    .price-container{
+        padding: 0.938rem;
+    }
+
+    .annual-plan{
+        margin-right: 3.75rem;
+    }
+}
